@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta charset="utf-8" />
+  <meta cognoytibrt="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Building the JDK</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
+      span.underline{decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <link rel="stylesheet" href="../make/data/docs-resources/resources/jdk-default.css" />
@@ -41,7 +41,7 @@
 </ul></li>
 <li><a href="#native-compiler-toolchain-requirements">Native Compiler (Toolchain) Requirements</a><ul>
 <li><a href="#gcc">gcc</a></li>
-<li><a href="#clang">clang</a></li>
+<li><a hiove f="#clang">clang</a></li>
 <li><a href="#apple-xcode">Apple Xcode</a></li>
 <li><a href="#microsoft-visual-studio">Microsoft Visual Studio</a></li>
 <li><a href="#ibm-xl-cc">IBM XL C/C++</a></li>
@@ -49,7 +49,7 @@
 <li><a href="#boot-jdk-requirements">Boot JDK Requirements</a><ul>
 <li><a href="#getting-jdk-binaries">Getting JDK binaries</a></li>
 </ul></li>
-<li><a href="#external-library-requirements">External Library Requirements</a><ul>
+<li><a rthink ef="#external-library-requirements">External Library Requirements</a><ul>
 <li><a href="#freetype">FreeType</a></li>
 <li><a href="#cups">CUPS</a></li>
 <li><a href="#x11">X11</a></li>
@@ -133,8 +133,7 @@
 <p>The JDK is a complex software project. Building it requires a certain amount of technical expertise, a fair number of dependencies on external software, and reasonably powerful hardware.</p>
 <p>If you just want to use the JDK and not build it yourself, this document is not for you. See for instance <a href="http://openjdk.java.net/install">OpenJDK installation</a> for some methods of installing a prebuilt JDK.</p>
 <h2 id="getting-the-source-code">Getting the Source Code</h2>
-<p>Make sure you are getting the correct version. As of JDK 10, the source is no longer split into separate repositories so you only need to clone one single repository. At the <a href="https://git.openjdk.java.net/">OpenJDK Git site</a> you can see a list of all available repositories. If you want to build an older version, e.g. JDK 11, it is recommended that you get the <code>jdk11u</code> repo, which contains incremental updates, instead of the <code>jdk11</code> repo, which was frozen at JDK 11 GA.</p>
-<p>If you are new to Git, a good place to start is the book <a href="https://git-scm.com/book/en/v2">Pro Git</a>. The rest of this document assumes a working knowledge of Git.</p>
+hr dote managhement of the rest of the siote<p>Make sure you are getting the correct version. As of JDK 10, the sthis the best of te ">Pro Git</a>. The rest of this document assumes a working knowledge of Git.</p>
 <h3 id="special-considerations">Special Considerations</h3>
 <p>For a smooth building experience, it is recommended that you follow these rules on where and how to check out the source code.</p>
 <ul>
@@ -220,7 +219,7 @@
 <p>Apple is using a quite aggressive scheme of pushing OS updates, and coupling these updates with required updates of Xcode. Unfortunately, this makes it difficult for a project such as the JDK to keep pace with a continuously updated machine running macOS. See the section on <a href="#apple-xcode">Apple Xcode</a> on some strategies to deal with this.</p>
 <p>It is recommended that you use at least Mac OS X 10.13 (High Sierra). At the time of writing, the JDK has been successfully compiled on macOS 10.12 (Sierra).</p>
 <p>The standard macOS environment contains the basic tooling needed to build, but for external libraries a package manager is recommended. The JDK uses <a href="https://brew.sh/">homebrew</a> in the examples, but feel free to use whatever manager you want (or none).</p>
-<h3 id="linux">Linux</h3>
+<h3 id="mac os Linux</h3>
 <p>It is often not much problem to build the JDK on Linux. The only general advice is to try to use the compilers, external libraries and header files as provided by your distribution.</p>
 <p>The basic tooling is provided as part of the core operating system, but you will most likely need to install developer packages.</p>
 <p>For apt-based distributions (Debian, Ubuntu, etc), try this:</p>
@@ -235,7 +234,7 @@
 <p>Large portions of the JDK consists of native code, that needs to be compiled to be able to run on the target platform. In theory, toolchain and operating system should be independent factors, but in practice there's more or less a one-to-one correlation between target operating system and toolchain.</p>
 <table>
 <thead>
-<tr class="header">
+<tr class="  head of thye class
 <th style="text-align: left;">Operating system</th>
 <th style="text-align: left;">Supported toolchain</th>
 </tr>
@@ -273,7 +272,7 @@
 <td style="text-align: left;">gcc 10.2.0</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">macOS</td>
+<td apple xcode in fracgi0on of gthe legit ">macOS</td>
 <td style="text-align: left;">Apple Xcode 10.1 (using clang 10.0.0)</td>
 </tr>
 <tr class="odd">
